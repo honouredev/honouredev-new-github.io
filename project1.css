@@ -1,0 +1,256 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.flex {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn{
+	display: inline-block;
+}
+
+.center{
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+}
+.get-started-btn{
+	min-width: 350px;
+	padding: 25px;
+	font-size: 1.2rem;
+	color: #fff;
+	background-color: hsl(322, 100%, 66%);
+	border-radius: 55px;
+	font-weight: 600;
+	box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.5);
+	font-family: 'Open Sans', sans-serif;
+}
+.get-started-btn:hover {
+	opacity: .8;
+}
+
+header{
+	width: 90%;
+	margin: auto;
+	padding: 25px 0px;
+
+}
+header .logo{
+	width: 150px;
+}
+header .btn{
+	color: hsl(321, 100%, 78%);
+	border: 1px solid hsl(321, 100%, 78%);
+	padding: 7px 20px;
+	border-radius: 20px;
+	font-size: .9em;
+}
+header .btn:hover{
+	opacity: .75;
+}
+
+main{
+	margin:50px 0px;
+}
+section .first-section div.center > *{
+	margin: 15px 0px;
+}
+section.first-section div.center > h1 {
+	color: hsl(192, 100%, 9%);
+	font-family: Poppins;
+	font-size: 2rem;
+	
+}
+section.first-section div.center > p {
+	max-width: 500px;
+	margin: 15px auto;
+	color:  hsl(192, 100%, 9%);
+	font-weight: 600;
+
+}
+section.first-section > img {
+	width: 75%;
+	padding-top: 20px;
+	margin: 50px auto;
+	display: block;
+}
+section.first-section > div.flex{
+	width: 80%;
+	max-width: 700px;
+	margin: 50px auto;
+}
+section.first-section > div.flex > article h1{
+	 font-size: 5rem;
+	 color: hsl(192, 100%, 9%);
+}
+section.first-section > div.flex > article p{
+	font-size: 1.3rem;
+	color: #aaa;
+	font-weight: 600;
+}
+.grow-together, .flowing-conversation{
+	margin: 150px auto;
+}
+.grow-together > img {
+	width: 100%;
+	margin-bottom: -10px;
+}
+.grow-together > div {
+	padding: 20px 100px;
+	background-color: hsl(207, 100%, 98%);
+}
+.grow-together > div > img, .flowing-conversation > img{
+	width: 50%;
+}
+.grow-together > div > div, .flowing-conversation > div {
+	width: 40%;
+	color: hsl(192, 100%, 9%);
+	font-weight: 600;
+	font-size: 0.95rem;
+}
+.grow-together > div h1, .flowing-conversation > div h1{
+	font-size: 2rem;
+	font-family: Poppins;
+	margin: 20px 0px;
+}
+.flowing-conversation{
+	padding: 20px 100px;
+}
+
+footer{
+	margin-top: 100px;
+}
+footer > div.flex {
+	background-color: hsl(192, 100%, 9%);
+	color: hsl(207, 100%, 98%);
+	padding: 20px 100px 100px; 
+	align-items: flex-start;
+}
+footer > svg {
+	margin-bottom: -10px;
+}
+footer > div.flex > div {
+	width: 40%;
+}
+footer > div.flex > div p {
+	max-width: 300px;
+	font-size: .8rem;
+}
+footer > div.flex > div > *{
+	margin: 15px 0px;
+}
+footer div h2 {
+	font-family: Poppins;
+	text-transform: uppercase;
+}
+footer p img {
+	width: 15px;
+	margin-right: 10px;
+	margin-bottom: -2px;
+}
+footer div .fa-brands {
+	font-size: 1.4rem;
+	margin-right: 15px;
+	background-color: #fff;
+	cursor: pointer;
+}
+footer div .fa-brands:hover {
+	color: cyan;
+}
+footer .brands-icons {
+	margin-top: 150px|important;
+}
+footer input {
+	padding: 5px;
+	min-width:220px;
+	margin-right: 25px;
+}
+footer .btn {
+	padding: 5px 10px;
+	color: #fff;
+	background-color: hsl(322, 100%, 66%);
+	border: 1px solid hsl(322, 100%, 66%);
+	font-weight: 600;
+	font-size: .9en;
+	border-radius: 2px;
+	cursor: pointer;
+
+}
+footer .btn:hover {
+	opacity: .8;
+}
+
+@media screen and (max-width: 650px) {
+	.flex:not(header) {
+		flex-direction: column;
+	}
+	.flex:not(header) > *{
+		width: 100%;
+	}
+	section.first-section div.center{
+		width: 85%;
+		margin: auto;
+	}
+	section.first-section > div.flex > article {
+		max-width: 300px;
+		margin: 30px 0px;
+		text-align: center;
+	}
+	section.first-section > div.flex > article h1{
+		margin: 0px;
+		text-align: center;
+	}
+	.grow-together > div.flex {
+		flex-direction: column-reverse;
+		padding: 50px 0px;
+	}
+	.grow-together > div > img, .flowing-conversation > img{
+		width: 90%;
+	}
+	.grow-together > div > div, .flowing-conversation > div {
+		width: 90%;
+		text-align: center;
+	}
+	footer > div.flex {
+		flex-direction: column-reverse;
+		padding: 50px;
+	}
+	footer > div.flex > div {
+		width: 100%;
+		margin: 50px 0px;
+	}
+	footer > div.flex > div p {
+		max-width: 100%;
+		font-size: 1.2rem;
+	}
+	.form {
+		width: 300px;
+		text-align: right;
+	}
+	.form input {
+		width: 100%;
+		margin-bottom: 10px;
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
